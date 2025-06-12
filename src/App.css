@@ -1,78 +1,85 @@
 body{
-    background-color: black;
+  background-color: #000;
+  margin: 0;
+  padding: 0;
 }
-.Main {
 
+.Main {
   max-width: 900px;
   margin: 40px auto;
-  padding: 20px;
-  background: black;
+  padding: 30px;
+  background-color: #000;
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 12px cyan;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: cyan;
 }
-h2:hover{
-    transition: 0.5s;
-    scale: 1.1;
-}
+
 .Main h2 {
   text-align: center;
   font-style: italic;
-  font-size: 32px;
-  margin-bottom: 24px;
+  font-size: 2rem;
+  margin-bottom: 20px;
   letter-spacing: 2px;
+  transition:  0.3s;
+}
+.Main h2:hover {
+  transform: scale(1.08);
 }
 
+.Filter {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
 .Filter label {
   font-size: 1rem;
-font-style: italic;
-font-weight: 600;
+  font-style: italic;
+  font-weight: 600;
 }
 .Filter select {
   margin-left: 8px;
-  border: cyan 2px solid;
-  background-color: black;
-  color: white;
-  padding: 6px 10px;
+  border: 2px solid cyan;
+  background-color: #000;
+  color: #fff;
+  padding: 8px 12px;
   border-radius: 12px;
-  font-size: 16px;
-  transition: border-color 0.2s;
-
+  font-size: 1rem;
 }
 .Filter select:hover,
 .Filter select:focus {
   border-color: red;
+  background-color: #111;
 }
+
 table {
-    margin-top: 20px;
   width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-  background: #fff;
+  border-collapse: collapse;
+  background-color: #111;
   border-radius: 12px;
   overflow: hidden;
-  border: 1px white solid;
+  box-shadow: 0 2px 8px rgba(0, 255, 255, 0.2);
 }
 thead {
   background-color: cyan;
 }
 thead th {
-  color: black;
+  color: #000;
   text-transform: uppercase;
   font-size: 0.9rem;
   padding: 12px 16px;
   letter-spacing: 0.5px;
+  border-bottom: 2px solid #000;
+}
+tbody tr {
+  transition: background-color 0.3s;
 }
 tbody tr:hover {
-  background-color: #1f1f1f;
-    transition: 0.5s;
-}
-tr{
-    background-color: black;
+  background-color: #222;
 }
 tbody td {
   padding: 12px 16px;
   font-size: 0.95rem;
-  border-bottom: 1px solid #e0e4ea;
+  color: #fff;
+  text-align: center;
 }
