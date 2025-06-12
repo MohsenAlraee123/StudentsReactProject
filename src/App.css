@@ -1,4 +1,3 @@
-/* Main container styling */
 body{
     background-color: black;
 }
@@ -17,7 +16,6 @@ h2:hover{
     transition: 0.5s;
     scale: 1.1;
 }
-/* Heading */
 .Main h2 {
   text-align: center;
   font-style: italic;
@@ -26,7 +24,6 @@ h2:hover{
   letter-spacing: 2px;
 }
 
-/* Filter section */
 .Filter label {
   font-size: 1rem;
 font-style: italic;
@@ -47,7 +44,6 @@ font-weight: 600;
 .Filter select:focus {
   border-color: red;
 }
-/* Table styling */
 table {
     margin-top: 20px;
   width: 100%;
